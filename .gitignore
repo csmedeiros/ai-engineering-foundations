@@ -1,0 +1,19 @@
+# Secrets — never commit API keys
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Virtualenv
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
