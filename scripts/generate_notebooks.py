@@ -10,21 +10,25 @@ ROOT = Path(__file__).resolve().parents[1]
 EPISODES = [
     {
         "folder": "01-ep-ai-engineering-map",
+        "notebook": "01-ai-engineering-map.ipynb",
         "linear": "CM-41",
         "linear_url": "https://linear.app/caiomedeiros/issue/CM-41",
     },
     {
         "folder": "02-ep-llm-tokens-context-limits",
+        "notebook": "02-tokens-context-limits.ipynb",
         "linear": "CM-42",
         "linear_url": "https://linear.app/caiomedeiros/issue/CM-42",
     },
     {
         "folder": "03-ep-prompt-vs-system",
+        "notebook": "03-conversation-memory-sliding-window.ipynb",
         "linear": "CM-43",
         "linear_url": "https://linear.app/caiomedeiros/issue/CM-43",
     },
     {
         "folder": "04-ep-basic-evaluation",
+        "notebook": "04-tool-calling.ipynb",
         "linear": "CM-44",
         "linear_url": "https://linear.app/caiomedeiros/issue/CM-44",
     },
@@ -1012,7 +1016,7 @@ def main() -> None:
     for ep in EPISODES:
         builder = BUILDERS[ep["folder"]]
         for lang in ("en", "pt", "es"):
-            path = ROOT / lang / ep["folder"] / "notebooks" / "01-getting-started.ipynb"
+            path = ROOT / lang / ep["folder"] / "notebooks" / ep["notebook"]
             path.parent.mkdir(parents=True, exist_ok=True)
             nb = notebook(builder(lang))
             path.write_text(json.dumps(nb, indent=1, ensure_ascii=False) + "\n", encoding="utf-8")

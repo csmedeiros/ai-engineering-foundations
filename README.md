@@ -32,7 +32,7 @@ es/   # Spanish
 └── <episode>/
     ├── README.md
     └── notebooks/
-        └── 01-getting-started.ipynb
+        └── <NN>-<topic>.ipynb
 ```
 
 ### Episodes (same set in every language)

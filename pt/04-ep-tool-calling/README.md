@@ -9,7 +9,7 @@ O modelo sozinho só gera texto. Com tools, o assistente pode pedir que o seu c�
 
 ## Notebooks
 
-Notebook de exemplo em português em `notebooks/`.
+Notebook `notebooks/04-tool-calling.ipynb`.
 
 ## Folder layout
 

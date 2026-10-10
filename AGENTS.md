@@ -31,7 +31,7 @@ es/   # Spanish
 └── <NN>-ep-<slug>/
     ├── README.md
     └── notebooks/
-        └── 01-getting-started.ipynb
+        └── <NN>-<topic>.ipynb
 ```
 
 Episodes (the same set in every language):
@@ -55,7 +55,10 @@ Episodes (the same set in every language):
 trees mirror each other file for file:
 
 - Same episode folders in each language.
-- Same notebook filename in every language (`01-getting-started.ipynb`).
+- Same notebook filename in every language (e.g. `03-conversation-memory-sliding-window.ipynb`).
+  Notebook files are named `<NN>-<topic>.ipynb`, with `<NN>` matching the episode number:
+  `01-ai-engineering-map.ipynb`, `02-tokens-context-limits.ipynb`,
+  `03-conversation-memory-sliding-window.ipynb`, `04-tool-calling.ipynb`.
 - Same cell structure, cell order, and code — only the prose (markdown text, code comments,
   strings shown to the learner) is translated:
 
@@ -133,10 +136,8 @@ Run Jupyter from the repository root so `load_dotenv()` finds the root `.env`.
 3. **Edit notebooks safely.** Round-trip through JSON (`python -c` / a small script) rather
    than hand-editing the raw text, and write back with `indent=1, ensure_ascii=False`. Keep
    the JSON valid — validate with `nbformat.validate(nbformat.read(path, as_version=4))`.
-4. **Keep episode READMEs in sync** with notebook content when structure changes (the
-   filename referenced in Ep. 03's README, `03-conversation-memory-sliding-window.ipynb`, is
-   stale — the actual file is `01-getting-started.ipynb`; fix such drift only when you are
-   already touching that episode).
+4. **Keep episode READMEs in sync** with notebook content when structure changes (e.g. when
+   renaming a notebook, update the filename listed in that episode's `README.md`).
 5. **Commit style:** short conventional prefixes — `feat(epNN)`, `docs(epNN)`, `fix(epNN)` —
    e.g. `feat(ep02-04): load .env vars in an initial cell for en/pt/es`.
 

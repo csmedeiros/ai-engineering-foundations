@@ -9,7 +9,7 @@ Material do episódio do Curso 1 — Fundamentos de AI Engineering.
 
 ## Notebooks
 
-Notebook de exemplo em português em `notebooks/`.
+Notebook `notebooks/02-tokens-context-limits.ipynb`.
 
 ## Folder layout
 

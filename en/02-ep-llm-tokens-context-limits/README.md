@@ -9,7 +9,7 @@ Episode materials for Course 1 — AI Engineering Fundamentals.
 
 ## Notebooks
 
-Sample notebook in English under `notebooks/`.
+Notebook `notebooks/02-tokens-context-limits.ipynb`.
 
 ## Folder layout
 

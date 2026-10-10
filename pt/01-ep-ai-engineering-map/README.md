@@ -9,7 +9,7 @@ Material do episódio do Curso 1 — Fundamentos de AI Engineering.
 
 ## Notebooks
 
-Notebook de exemplo em português em `notebooks/`.
+Notebook `notebooks/01-ai-engineering-map.ipynb`.
 
 ## Folder layout
 

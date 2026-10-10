@@ -9,7 +9,7 @@ Alone, the model only generates text. With tools, the assistant can ask your cod
 
 ## Notebooks
 
-Sample notebook in English under `notebooks/`.
+Notebook `notebooks/04-tool-calling.ipynb`.
 
 ## Folder layout
 
